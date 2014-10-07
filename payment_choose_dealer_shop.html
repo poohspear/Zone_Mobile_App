@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="./theme/images/favicon.png">
+    <title>Zone Project</title>
+    <!-- jQuery -->
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/jquery/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap-theme.min.css">
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="./plugins/fancybox/fancybox.css">
+    <script src="./plugins/fancybox/fancybox.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./plugins/font-awesome/css/font-awesome.min.css" /> 
+    <!-- Theme -->
+    <link rel="stylesheet" href="./theme/theme_style.css" /> 
+    <!-- Config JS-->
+    <script src="./js/config.js"></script> 
+</head>
+<body>
+    <!-- Modal Login-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-offset-1">
+                                <h2>Already Member?</h2>
+                                <h3>Login</h3>
+                            </div>
+                            <form action="#" class="row zone_form">
+                                <div class="col-xs-10 col-xs-offset-1"><label>Email</label></div>
+                                <div class="col-xs-10 col-xs-offset-1"><input type="text" /></div>
+                                <div class="col-xs-10 col-xs-offset-1"><label>Password</div>
+                                <div class="col-xs-10 col-xs-offset-1"><input type="password" /></div>
+                                <div class="col-xs-6 col-xs-offset-1"> <button class="col-xs-10">Login</botton></div>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-offset-1">
+                                <h2>Don’t have an account?</h2>
+                                <h3>Create Account </h3>
+                            </div>
+                            <form action="#" class="row zone_form">
+                                <div class="col-xs-10 col-xs-offset-1"><label>Email</label></div>
+                                <div class="col-xs-10 col-xs-offset-1"><input type="password" /></div>
+                                <div class="col-xs-10 col-xs-offset-1"><label>Password</label></div>
+                                <div class="col-xs-10 col-xs-offset-1"><input type="password" /></div>
+                                <div class="col-xs-10 col-xs-offset-1"><label>Password again</label></div>
+                                <div class="col-xs-10 col-xs-offset-1"><input type="password" /></div>
+                                <div class="col-xs-6 col-xs-offset-1"><button>Create Account</botton></div>
+                            </form>
+                        </div>
+                    </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>                
+    <!-- Modal Login End-->    
+    <div id="banner_wapper" class="container_wapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4 col-sm-2">
+                        <img src="./theme/images/logo.png" class="hidden-xs img-responsive"/>
+                        <img src="./theme/images/logo.png" id="mobile_logo" class="visible-xs-block"/>
+                </div>
+                <div class="visible-xs-block visible-sm-block col-xs-8 col-sm-10">
+                        <p>
+                            <a  id="mobile_menu" href="#"><span class="fa fa-bars"></span></a><br />
+                            <span class="fa fa-shopping-cart"></span> <a href="#">My Cart [3]</a>
+                        </p>
+                </div>
+                <div class="col-xs-12 col-sm-10 hidden-xs hidden-sm" id="banner_link">
+                    <p>
+                        <a href="#" class="fancybox_iframe" data-toggle="modal" data-target="#myModal">Sing in</a> |  
+                        <a href="#" class="fancybox_iframe" data-toggle="modal" data-target="#myModal">Create an account</a> | 
+                        <a href="#">My Message Box</a> | 
+                        <a href="#">My Account Setting</a> <br />
+                        <span class="fa fa-shopping-cart"></span> <a href="#">My Cart [3]</a> 
+                    </p>
+                </div>
+                <div class="hidden-xs hidden-sm col-sm-8">
+                        <form action="#" method="get" class="row">
+                            <div class="col-xs-12 col-sm-9"> 
+                                <input type="text" name="q" />
+                            </div>
+                            <div  class="col-xs-12 col-sm-3">
+                                <input type="submit" value="Search" />
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobile_menu_list">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#"><span class="fa fa-shopping-cart"></span> My Cart [3]</a></li>
+                    <li><a class="mobilemenu_header">Account</a></li>
+                    <li><a href="#"><span class="fa fa-user"></span> Sing in</a></li>
+                    <li><a href="#"><span class="fa fa-pencil"></span> Create an account</a></li>
+                    <li><a href="#"><span class="fa fa-envelope"></span> My Message Box</a></li>
+                    <li><a href="#"><span class="fa fa-cogs"></span> My Account Setting </a></li>
+                    <li><a class="mobilemenu_header">Categories</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Movies</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Music</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Games</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Electronics</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Computers</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Home</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Garden & Tools</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Beauty</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Health & Grocery</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Toys, Kids & Baby</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Clothing, Shoes & Jewelry</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Sports & Outdoors</a></li>
+                    <li><a href="#"><span class="fa fa-angle-double-right"></span> Automotive & Industrial</a></li>
+                    <li><a class="mobilemenu_header">Organiation Info</a></li>
+                    <li><a href="#"><span class="fa fa-file-text"></span> About Zone project</a></li>
+                    <li><a href="#"><span class="fa fa-truck"></span> Become supplier</a></li>
+                    <li><a href="#"><span class="fa fa-map-marker"></span> Zone's dealer shops</a></li>
+                    <li><a href="#"><span class="fa fa-suitcase"></span> Career</a></li>
+                    <li><a href="#"><span class="fa fa-phone"></span> Contact Us</a></li>
+                </ul>
+        </div>
+    </div>
+    <div id="body_content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-3">
+                        <h1>Categories</h1>
+                        <ul id="category_menu" class="nav nav-pills nav-stacked">
+                            <li><a href="#">Movies<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Music<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Games<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Electronics<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Computers<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Home<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Garden & Tools<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Beauty<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Health & Grocery<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Toys, Kids & Baby<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Clothing, Shoes & Jewelry<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Sports & Outdoors<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                            <li><a href="#">Automotive & Industrial<span class="pull-right fa fa-angle-double-right"></span></a></li>
+                        </ul>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="row">
+                        <!-- shopping item start -->
+                        <script>
+                        $(function(){
+                                //$.zone_root = "http://127.0.0.1/web_project/www/web_project/zone-ecommerce/";
+                                $.zone_root = "http://www.zone.phyozawtun.com/";
+                                $.ajax({
+                                    dataType: "json",
+                                    type: 'GET',
+                                    url : $.zone_root + 'ajax/abc_dealer_shop.php' ,
+                                    async :true,
+                                    cache:false, 
+                                    contentType : "application/json, text/javascript" ,
+                                    crossDomain: true,
+                                    success : function(data){
+                                        //alert(JSON.stringify(data));
+                                        abc_table = "";
+                                        //data crateing
+                                        abc_table = "<table class=\"table table-bordered\">";
+                                        abc_table += "    <tr class=\"active\"><td>Shop Name</td><td>Address</td><td>Actions</tr></tr>";
+                                        for(i=0;i<data.length;i++){
+                                            abc_shop_id = data[i].abc_shop_id;    
+                                            shop_name = data[i].shop_name;   
+                                            address = data[i].address;
+                                            location_lat_long = data[i].location_lat_long;
+                                            shop_email = data[i].shop_email;
+                                            abc_table += "    <tr class=\"active\"><td>"+shop_name+"</td><td>"+address+"</td><td><a href=\"#"+address+"\" class=\"btn btn-primary chose_shop\" abc_shop_id=\""+abc_shop_id+"\">Choose</td></tr>";
+                                        }
+                                        abc_table += "</table>";
+                                        $("#abc_table").html(abc_table);
+                                        $(".chose_shop").click(function(){
+                                            $.abc_shop_id = $(this).attr("abc_shop_id");
+                                            $.ajax({
+                                                            dataType: "json",
+                                                            type: 'GET',
+                                                            url : $.zone_root + 'ajax/payment_success.php?id=' + $.abc_shop_id ,
+                                                            async :true,
+                                                            cache: false, 
+                                                            contentType : "application/json, text/javascript" ,
+                                                            crossDomain: true,
+                                                            success: function(data){
+                                                                //alert(JSON.stringify(data));
+                                                                if(data=="success"){
+                                                                    url = "payment_payment_success.html";
+                                                                    $(location).attr('href',url);
+                                                                }
+                                                            },
+                                                            error: function(data){
+                                                                alert(JSON.stringify(data));
+                                                            }
+                                            });
+                                            return false;
+                                        });
+                                    },
+                                    error: function(data){
+                                        alert(data);
+                                    }
+                                });
+                        });
+                        </script>
+                        <!-- shopping item end-->
+                        <!-- choose dealer start -->
+                        <div class="col-xs-12">
+                            <h2>1 My Cart  | 2 Delivery Address | 3 Payment | 4 Payment Succeed</h2>
+
+                            <p>Choose your nearest ABC Shop.</p>
+                            <div class="table-responsive" id="abc_table">
+                            </div>
+                        </div>
+                        <!-- choose dealer end -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer_logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-5">
+                        <img src="./theme/images/logo.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product_category" class="hidden-xs hidden-sm">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Product category</h1>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="visible-md-block visible-sm-block clearfix"></div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dealer_shop_address" class="hidden-xs hidden-sm">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Local Dealer Shop</h1>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="visible-md-block visible-sm-block clearfix"></div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#"><i class="fa fa-circle"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Apparel</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Automobiles & Motorcycles</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Beauty & Personal Care</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Chemicals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Computer</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Construction & Real Estate</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Consumer Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electronic Components</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Electrical Equipment</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Eyewear,Jewelry,Watches</a></li>
+                    <ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer_website">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>© 2014 Zone Organization </p>
+                    <p class="hidden-xs">
+                            <a href="#">About Zone project</a> | 
+                            <a href="#">Become supplier on Zone project</a> | 
+                            <a href="#">List of Zone's dealer shop</a> | 
+                            <a href="#">Career</a> | 
+                            <a href="#">Contact Us</a>
+                    </p>
+                    <p class="visible-xs-block">
+                            <a href="#">About Zone project</a> <br />
+                            <a href="#">Become supplier on Zone project</a> <br />
+                            <a href="#">List of Zone's dealer shop</a> <br />
+                            <a href="#">Career</a><br />
+                            <a href="#">Contact Us</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

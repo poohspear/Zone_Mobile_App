@@ -1,0 +1,228 @@
+/*
+Zone Project
+Future ICT Solution
+*/
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+a {
+    color: #000000;
+}
+a:hover {
+    color: #f00;
+}
+h1 {
+    font-family: Georgia;
+    color: #ff0000;
+    font-size: 18px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+.red {
+    background: #850000;
+}
+.green {
+    background: green;
+}
+.fade_text {
+    color:#c3c3c3;
+}
+.container_wapper {
+    width: 100%;
+}
+.container-fluid {
+    max-width: 1900px;
+}
+/*#mobile_menu*/
+#mobile_menu {
+    font-size: 30px;
+    padding: 10px;
+}
+#mobile_menu_list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    background: #333333; 
+    z-index: 50;
+}
+#mobile_menu_list li a:hover,
+#mobile_menu_list li a:focus {
+    background: #414141; 
+}
+#mobile_menu_list .mobilemenu_header:hover ,
+#mobile_menu_list .mobilemenu_header:focus ,
+#mobile_menu_list .mobilemenu_header {
+    background-color: #595959 !important;
+    font-weight: bold;
+    color: #fff;
+}
+#mobile_menu_list li {
+    border-top: 1px solid #525252;
+    border-bottom: 1px solid #232323;
+    border-left: 1px solid #666666;
+    margin:0;
+}
+#mobile_menu_list li a {
+    border-radius: 0;
+    color: #fff;
+}
+#mobile_menu_list span {
+    color: #9c9c9c;
+}
+/*banner_wapper*/
+#banner_wapper {
+    background: #fff url("./images/banner_bg.jpg") repeat-x bottom center;
+    padding-bottom: 15px;
+    text-align: right;
+}
+#banner_wapper p {
+    font-size: 14px;
+    line-height: 2em;
+    padding: 10px;
+}
+#banner_wapper #banner_link {
+    color: #000;
+    min-height: 75px;
+}
+#banner_wapper form input {
+    height: 40px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+#banner_wapper #mobile_logo {
+    width: 95px;
+}
+/*#left_menu*/
+#category_menu li ,
+#category_menu li a ,
+#category_menu li a span {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+}
+#category_menu li a {
+    padding: 0 20px 0 20px;
+}
+#category_menu li {
+    border-bottom: 1px solid #bebebe;
+}
+#category_menu li a span {
+    color: #8a8a8a !important;
+}
+/*#body_content*/
+#body_content .product_box {
+    border: 1px solid #c0c0c0;
+    width: 100%;
+    padding:10px;
+    margin-top: 25px;
+}
+#body_content .product_box .btn_product_box {
+    border: 1px solid #c0c0c0;
+    border-radius: 0;
+    font-size: 12px;
+    height: 28px;
+    line-height: 20px;
+    padding-top: 3px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+/*#footer_logo*/
+#footer_logo  {
+    margin: 40px 0 0 0;
+    background: #c0c0c0 url("./images/banner_bg.jpg") bottom center;
+    border-bottom: 1px solid #c0c0c0;
+}
+/*#product_category #dealer_shop_address*/
+#product_category ,
+#dealer_shop_address {
+    padding-top: 30px;
+    padding: 30px;
+}
+#product_category ul li ,
+#dealer_shop_address ul li {
+    font-size: 14px;
+    line-height: 14px;
+}
+#product_category ul li i ,
+#dealer_shop_address ul li i {
+    font-size: 8px;
+    float: left;
+    padding: 2px 10px 10px 5px;
+}
+#dealer_shop_address {
+    background-color: #f4f4f4;
+}
+#footer_website {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#footer_website a {
+    text-decoration: underline;
+}
+/*.zone_form*/
+.zone_form input ,
+.zone_form button ,
+.zone_form select ,
+.zone_form option ,
+.zone_form textarea ,
+.zone_form label {
+    width: 100%;
+    min-height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: normal;
+}
+.zone_form input ,
+.zone_form textarea ,
+.zone_form select ,
+.zone_form button {
+    padding: 0 10px 0px 10px;
+    margin-bottom: 20px;
+}
+.zone_form button {
+    margin-top: 20px;
+}
+/*payment method*/
+.payment_option_box {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 30px;
+}
+.payment_option_box img {
+    margin: 0 auto;
+}
+.payment_option_box .btn {
+    margin-bottom: 15px;
+}
+.notification_success {
+    text-align: center;
+    color:#c0c0c0; 
+}
+h2.notification_success {
+    color:#000; 
+}
+h3.notification_success {
+    color:#0f0; 
+}
+/*row_cart_table*/
+.img_cart {
+    width: 150px;
+}
+.img_cart_num {
+    text-align: right;
+}
