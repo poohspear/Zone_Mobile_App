@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "com.phyozawtun.zone"
         version   = "1.0.1">
 
-    <name>Thiriwaimon Gallery</name>
+    <name>Zone Ecommerce App</name>
 
     <description>
-         The name “Thiriwaimon” is well known in Yangon for picture framing service, it has been running nearly two decades from now. Most of the Thiriwaimon customers are foreginer who live in Myanmar as long-stay residents. Thiriwaimon is handling to do framing the delicate things such as antique paintings, old photos, rare clothes etc. “Thiriwaimon” gallery was established in 2005, displaying only the genuine paintings of Myanmar famous artists. In 2009, we did “Oldie Beauty” exhibition which was the art works of late artists, sold out many paintings. Since then, our gallery trend has been changed, focused more on the old paintings rather than new ones. 
+         Zone Ecommerce App
     </description>
 
     <author href="http://futureictsolution.com" email="poohspear@gmail.com">
